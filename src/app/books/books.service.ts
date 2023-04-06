@@ -15,13 +15,13 @@ export class BooksService {
         amount: 300.56
       },
       {
-        name: 'The Diary of A Young GirlDeluxe Hardbound EditioHardcover',
+        name: 'The new',
         author: 'Anne Frank',
         img: 'https://m.media-amazon.com/images/I/718MgUuw87S.jpg',
         amount: 300
       },
       {
-        name: 'The Diary of A Young GirlDeluxe Hardbound EditioHardcover',
+        name: 'ne2',
         author: 'Anne Frank',
         img: 'https://m.media-amazon.com/images/I/718MgUuw87S.jpg',
         amount: 300

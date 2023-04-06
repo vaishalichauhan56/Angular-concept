@@ -1,0 +1,11 @@
+<p>cart works!</p>
+<div *ngIf="getCart().length > 0">
+    <ul>
+        <li *ngFor="let book of getCart()">
+            <img [src]="book.img" [alt]="book.name" width="50">
+            <p> {{book.name | titlecase}} by {{book.author}}</p>
+            {{book.amount | currency:'INR'}}
+        </li>
+    </ul>
+</div>
+<div *ngIf="getCart().length == 0">Your cart is empty</div>

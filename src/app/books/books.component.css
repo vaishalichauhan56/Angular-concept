@@ -1,0 +1,12 @@
+.book-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.book-list .li{
+    width:25%;
+    padding:15px;
+}
+.book-list li p{
+    white-space: normal;
+    word-wrap: break-word;
+}

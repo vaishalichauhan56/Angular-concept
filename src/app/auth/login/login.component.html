@@ -1,0 +1,13 @@
+<form (ngSubmit)="submit()" #myFormm="ngForm">
+    <div>
+        <h1>Login</h1>
+        <input type="email" placeholder="Enter email" [(ngModel)]="form.email" name="email" #email="ngModel" required>
+        {{form.email}}
+        <p *ngIf="email.invalid && (email.dirty || email.touched)">Email must be required</p>
+        <input type="text" placeholder="Enter Password" [(ngModel)]="form.password" name="password" id="password"
+            #password="ngModel" required>
+        <p *ngIf="password.invalid && (password.dirty || password.touched)">Password must be required</p>
+
+        <input type="submit" name="" id="" [disabled]="myFormm.form.invalid">
+    </div>
+</form>

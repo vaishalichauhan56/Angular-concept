@@ -9,7 +9,7 @@ import { BooksService } from './books.service';
   styleUrls: ['./books.component.css'],
 })
 export class BooksComponent {
-  isSwitching: boolean = false;
+  // isSwitching: boolean = false;
   constructor(private booksService: BooksService) {
     console.log({ constructor: "Constructor" });
   }
@@ -21,15 +21,4 @@ export class BooksComponent {
     this.books = this.booksService.getBooks();
   }
 
-  // toggleClick() {
-  //   this.isSwitching = !this.isSwitching;
-  // }
-
-  addToCart(book: Book) {
-    console.log(book);
-  }
-
-  // handlingClick(event : any){
-  //   this.myName = event.target.value
-  // }
 }
