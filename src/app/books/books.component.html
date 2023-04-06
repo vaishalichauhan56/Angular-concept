@@ -1,0 +1,11 @@
+<p>books works!</p>
+<button (click)="isSwitching = !isSwitching">Checking
+    <ng-container *ngIf="!isSwitching">Show Books</ng-container>
+    <ng-container *ngIf="isSwitching">Hide Books</ng-container>
+</button>
+<ul *ngIf="isSwitching">
+    <ng-container *ngFor="let singleBook of books; let i=index">
+        <app-book (bookEmitter)="addToCart($event)" [book]="singleBook"></app-book>
+    </ng-container>
+
+</ul>
